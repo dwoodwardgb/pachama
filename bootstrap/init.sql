@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS pachama;
+CREATE DATABASE pachama;
