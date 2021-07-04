@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ForestCard from "./ForestCard";
-import Layout from "./Layout";
+import Layout from "../Layout";
 import "./ForestGalleryPage.css";
 
 function SearchRow() {

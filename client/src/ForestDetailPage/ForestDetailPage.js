@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Layout from "./Layout";
+import Layout from "../Layout";
 
 export default function ForestDetailPage() {
   const { forestId } = useParams();
