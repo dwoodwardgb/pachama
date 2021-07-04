@@ -15,8 +15,17 @@ export default function ForestDetailPage() {
       body={
         <section>
           <Link to={"/"}>Back</Link>
-          <h1>Forest</h1>
-          <code>{JSON.stringify(forest, null, 2)}</code>
+          <h1>{forest.name}</h1>
+          <div className="space-between">
+            <span>{forest.country}</span>
+            <span>{forest.hectares} hectares</span>
+            <span>
+              {forest.type?.substring(0, 1).toUpperCase() +
+                forest.type?.substring(1)}
+            </span>
+          </div>
+          <p>{forest.description}</p>
+          <img alt="forest" src={forest.imageUrl} />
         </section>
       }
     />

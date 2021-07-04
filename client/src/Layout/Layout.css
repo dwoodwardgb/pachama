@@ -9,4 +9,5 @@
 
 .layout > main {
   flex: 1 1;
+  padding: 2rem;
 }

@@ -1,13 +1,11 @@
-import { Link } from "react-router-dom";
+import Header from "./Header";
 import "./Layout.css";
 
 export default function Layout({ body }) {
   return (
     <div className="layout">
       <header>
-        <nav>
-          <Link to="/">Pachama</Link>
-        </nav>
+        <Header />
       </header>
       <main>{body}</main>
     </div>
