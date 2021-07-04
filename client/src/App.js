@@ -9,7 +9,7 @@ function App() {
         <Route exact path="/">
           <ForestGalleryPage />
         </Route>
-        <Route path="/:forest">
+        <Route path="/:forestId">
           <ForestDetailPage />
         </Route>
       </Switch>

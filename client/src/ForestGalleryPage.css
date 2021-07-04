@@ -1,0 +1,15 @@
+ul.gallery > li {
+  list-style: none;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}

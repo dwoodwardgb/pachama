@@ -1,0 +1,12 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.layout > header {
+  flex: 0 0;
+}
+
+.layout > main {
+  flex: 1 1;
+}
