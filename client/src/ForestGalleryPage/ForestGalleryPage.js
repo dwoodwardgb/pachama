@@ -32,7 +32,7 @@ export default function ForestGalleryPage() {
   const [query, setQuery] = useState({});
   const [forests, setForests] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:9000/api/forests?" + new URLSearchParams(query))
+    fetch("/api/forests?" + new URLSearchParams(query))
       .then((r) => r.json())
       .then(setForests);
   }, [setForests, query]);

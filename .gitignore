@@ -7,3 +7,5 @@ dist
 # files that are served but not commited
 public/stylesheets
 public/.well-known/apple-developer-merchantid-domain-association
+
+.DS_store

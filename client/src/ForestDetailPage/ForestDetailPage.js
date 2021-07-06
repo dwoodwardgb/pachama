@@ -6,7 +6,7 @@ export default function ForestDetailPage() {
   const { forestId } = useParams();
   const [forest, setForest] = useState({});
   useEffect(() => {
-    fetch(`http://localhost:9000/api/forests/${forestId}`)
+    fetch(`/api/forests/${forestId}`)
       .then((r) => r.json())
       .then(setForest);
   }, [setForest, forestId]);

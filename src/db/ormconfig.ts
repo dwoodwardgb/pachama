@@ -32,9 +32,6 @@ const environments: Record<string, ConfigType> = {
   },
   production: {
     logging: false,
-    extra: {
-      ssl: { rejectUnauthorized: false },
-    },
   },
 };
 

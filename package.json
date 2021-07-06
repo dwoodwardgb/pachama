@@ -14,7 +14,8 @@
     "build": "concurrently --raw \"yarn _build:js\"",
     "dev": "yarn build && NODE_ENV=development concurrently -k --raw \"yarn _watch:js\" \"yarn _nodemon\"",
     "start": "node -r dotenv/config --optimize_for_size --max_old_space_size=460 --gc_interval=100 dist/main.js",
-    "typeorm": "yarn _build:js && typeorm -f dist/db/ormconfig.js"
+    "typeorm": "yarn _build:js && typeorm -f dist/db/ormconfig.js",
+    "start_in_docker": "psql -f ./bootstrap/init.sql $DATABASE_URL && yarn typeorm migrations:run && yarn start"
   },
   "dependencies": {
     "cors": "^2.8.5",
